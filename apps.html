@@ -1,42 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Noosha Apps</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noosha - Apps</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      color: #333;
+      background: #f8fafc;
+      color: #222;
       text-align: center;
-      padding: 40px;
+      margin: 0;
+      padding: 0;
     }
-    h1 {
-      color: #0077b6;
+    header {
+      background: #e2e8f0;
+      padding: 20px;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #111;
+    }
+    nav {
+      background: #f1f5f9;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #0077ff;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 20px;
     }
     .app-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
-      margin-top: 30px;
+      margin-top: 20px;
     }
-    .app {
-      background: white;
-      border-radius: 15px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      padding: 20px;
-      width: 200px;
+    .card {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    }
+    .card h3 {
+      color: #0077ff;
+      margin-top: 0;
+    }
+    footer {
+      background: #e2e8f0;
+      padding: 15px;
+      font-size: 0.9em;
+      color: #444;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
-  <h1>📱 Noosha Apps</h1>
-  <p>یہاں تم اپنی Apps کے لنکس add کر سکتے ہو۔</p>
-  <div class="app-list">
-    <div class="app">App 1</div>
-    <div class="app">App 2</div>
-  </div>
+  <header>Noosha 🌸</header>
+
+  <nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="apps.html">📱 Apps</a>
+    <a href="books.html">📚 Books</a>
+    <a href="ai.html">🤖 AI Solutions</a>
+    <a href="videos.html">🎬 Videos</a>
+  </nav>
+
+  <main>
+    <h2>📱 Featured Apps</h2>
+    <p>Explore useful and creative apps handpicked by Noosha!</p>
+
+    <div class="app-list">
+      <div class="card">
+        <h3>Canva</h3>
+        <p>Create amazing designs with ease.</p>
+        <a href="https://www.canva.com" target="_blank">Open App</a>
+      </div>
+      <div class="card">
+        <h3>CapCut</h3>
+        <p>Edit videos like a pro with templates.</p>
+        <a href="https://www.capcut.com" target="_blank">Open App</a>
+      </div>
+      <div class="card">
+        <h3>Notion</h3>
+        <p>Plan, organize, and manage everything.</p>
+        <a href="https://www.notion.so" target="_blank">Open App</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Noosha — All rights reserved 🌸
+  </footer>
 </body>
 </html>
